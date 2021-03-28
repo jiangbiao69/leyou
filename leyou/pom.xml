@@ -22,6 +22,7 @@
     <name>leyou</name>
     <description>Demo project for Spring Boot</description>
 
+    <!--所有的springboot工程都必须继承-->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -37,7 +38,8 @@
         <mybatis.starter.version>1.3.2</mybatis.starter.version>
         <mapper.starter.version>2.0.2</mapper.starter.version>
         <druid.starter.version>1.1.9</druid.starter.version>
-        <mysql.version>5.1.32</mysql.version>
+        <!--<mysql.version>5.1.32</mysql.version>-->
+        <mysql.version>8.0.16</mysql.version><!--driver-class-name: com.mysql.cj.jdbc.Driver爆红，版本太低？改高试试。问题解决-->
         <pageHelper.starter.version>1.2.3</pageHelper.starter.version>
         <leyou.latest.version>1.0.0-SNAPSHOT</leyou.latest.version>
         <fastDFS.client.version>1.26.1-RELEASE</fastDFS.client.version>
@@ -86,13 +88,17 @@
         </dependencies>
     </dependencyManagement>
 
+    <!--下面注释掉的这一部分起什么作用？一开始的教学视频中有。
+    学到P84集时，leyou-item-interface中加入了一个persistence-api,结果install时出错，网上说把这个注释掉。
+    虽然install时不报错了，但还是无法查询商品分类。继续解决问题。。。
     <build>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>2.0.6.RELEASE</version><!--自己加的版本号，视频中没有版本号，但这里报错了-->
+                //<version>2.0.6.RELEASE</version> 自己加的版本号，视频中没有版本号，但这里报错了
             </plugin>
         </plugins>
-    </build>
+    </build>-->
+
 </project>

@@ -10,7 +10,7 @@ import java.util.List;
 @Service
 public class CategoryService {
     @Autowired
-    private CategoryMapper categoryMapper;
+    private CategoryMapper categoryMapper; //这里categoryMapper下报红，我们disable dispection禁用检查
 
     /**
      * 根据父节点查询子节点
@@ -20,4 +20,5 @@ public class CategoryService {
         record.setParentId(pid);
         return this.categoryMapper.select(record);
     }
+
 }

@@ -27,7 +27,7 @@ public class LeyouCorsConfiguration {
         // 4）允许的头信息
         config.addAllowedHeader("*");
         //5）有效时长
-        config.setMaxAge(36000L);
+        //config.setMaxAge(36000L);
         //2.添加映射路径，我们拦截一切请求
         UrlBasedCorsConfigurationSource configSource = new UrlBasedCorsConfigurationSource();
         configSource.registerCorsConfiguration("/**", config);

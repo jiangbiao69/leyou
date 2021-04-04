@@ -13,6 +13,7 @@
         <module>leyou-gateway</module>
         <module>leyou-item</module>
         <module>leyou-common</module>
+        <module>leyou-upload</module>
     </modules>
 
     <!--<properties>   这是创建项目时自动帮我们生成的，先注释掉看是否影响项目运行，因为课程中没有这一段

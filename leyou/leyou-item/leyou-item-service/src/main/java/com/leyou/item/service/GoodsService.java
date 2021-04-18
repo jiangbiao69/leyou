@@ -94,6 +94,10 @@ public class GoodsService {
         spuDetail.setSpuId(spuBo.getId());
         this.spuDetailMapper.insertSelective(spuDetail);
 
+        saveSkuAndStock(spuBo);
+    }
+    //这是从上面新增商品方法中被抽取出来的方法，因为更新商品中也会使用
+    private void saveSkuAndStock(SpuBo spuBo) {
         spuBo.getSkus().forEach(sku -> {
             //新增sku
             sku.setId(null);
@@ -128,5 +132,37 @@ public class GoodsService {
             sku.setStock(stock.getStock());
         });
         return skus;
+    }
+
+    /*
+     * 更新商品信息
+     * */
+    @Transactional
+    public void updateGoods(SpuBo spuBo) {
+        //根据spuId查询要删除的sku
+        Sku record = new Sku();
+        record.setSpuId(spuBo.getId());
+        List<Sku> skus = this.skuMapper.select(record);
+        skus.forEach(sku -> {
+            //删除stock
+            this.stockMapper.deleteByPrimaryKey(sku.getId());
+        });
+
+        //删除sku
+        Sku sku = new Sku();
+        sku.setSpuId(spuBo.getId());
+        this.skuMapper.delete(sku);
+
+        //新增sku+新增stock
+        this.saveSkuAndStock(spuBo);
+
+        //更新spu和spuDetail
+        spuBo.setCreateTime(null);
+        spuBo.setLastUpdateTime(new Date());
+        spuBo.setValid(null);
+        spuBo.setSaleable(null);
+        this.spuMapper.updateByPrimaryKeySelective(spuBo);
+
+        this.spuDetailMapper.updateByPrimaryKeySelective(spuBo.getSpuDetail());
     }
 }

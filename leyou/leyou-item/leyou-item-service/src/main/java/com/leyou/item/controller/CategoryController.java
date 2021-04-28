@@ -40,7 +40,15 @@ public class CategoryController {
         }
         //200：查询成功
         return ResponseEntity.ok(categories);
+    }
 
+    @GetMapping
+    public ResponseEntity<List<String>> queryNamesByIds(@RequestParam("ids")List<Long> ids){
+        List<String> names = this.categoryService.queryNamesByIds(ids);
+        if(CollectionUtils.isEmpty(names)){
+            return ResponseEntity.notFound().build();
+        }
+        return ResponseEntity.ok(names);
     }
 
 }

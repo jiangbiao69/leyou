@@ -5,7 +5,7 @@ spring:
     name: item-service
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver  #之前没用这个，连接数据库时总是报错
-    url: jdbc:mysql://localhost:3306/hm49?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/hm50?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
     username: root
     password: root
     hikari:

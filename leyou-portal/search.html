@@ -760,6 +760,29 @@
     var vm = new Vue({
         el: "#searchApp",
         data: {
+            search: {
+                key: ""
+            },
+            goodsList: []
+        },
+        created(){
+            if(!location.search){
+                return ;
+            }
+            const search = ly.parse(location.search.substring(1));
+
+            this.search=search;
+
+            this.loadDate();
+        },
+        methods: {
+            loadDate(){
+                ly.http.post("/search/page",this.search).then(res =>{
+                    console.log(res);
+                }).catch(()=>{
+
+                });
+            }
         },
 
         components:{

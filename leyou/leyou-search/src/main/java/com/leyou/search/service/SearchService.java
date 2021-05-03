@@ -290,4 +290,15 @@ public class SearchService {
     }
 
 
+    public void save(Long id) throws IOException {
+        Spu spu = this.goodsClient.querySpuById(id);
+        Goods goods = this.buildGoods(spu);
+        this.goodsRepository.save(goods);
+    }
+
+
+    //删除
+    public void delete(Long id) {
+        this.goodsRepository.deleteById(id);
+    }
 }

@@ -1,5 +1,6 @@
 package com.leyou.user.service;
 
+import com.leyou.common.utils.NumberUtils;
 import com.leyou.user.mapper.UserMapper;
 import com.leyou.user.pojo.User;
 import com.leyou.user.utils.CodecUtils;
@@ -48,8 +49,7 @@ public class UserService {
         }
 
         //生成验证码
-        //String code = NumberUtils.generateCode(6);  由于阿里短信无法发送，此处设置成固定数值“666666”试试
-        String code = "666666";
+        String code = NumberUtils.generateCode(6);
 
         //发送消息到rabbitMQ
         Map<String,String> msg = new HashMap<>();

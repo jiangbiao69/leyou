@@ -11,17 +11,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af200b43-1035-4baf-94d5-76f6be8ed9d1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../leyou/leyou-user/leyou-user-service/src/main/java/com/leyou/user/utils/CodecUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/leyou-auth/leyou-auth-common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/leyou-auth/leyou-auth-common/src/main/java/com/leyou/common/pojo/UserInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/leyou-auth/leyou-auth-common/src/main/java/com/leyou/common/utils/JwtConstans.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/leyou-auth/leyou-auth-common/src/main/java/com/leyou/common/utils/JwtUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/leyou-auth/leyou-auth-common/src/main/java/com/leyou/common/utils/ObjectUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/leyou-auth/leyou-auth-common/src/main/java/com/leyou/common/utils/RsaUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/leyou-auth/leyou-auth-common/src/test/java/com/leyou/auth/test/JwtTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/leyou-auth/leyou-auth-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/leyou-auth/leyou-auth-service/src/main/java/com/leyou/LeyouAuthApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/leyou-auth/leyou-auth-service/src/main/java/com/leyou/auth/client/UserClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/leyou-auth/leyou-auth-service/src/main/java/com/leyou/auth/config/JwtProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/leyou-auth/leyou-auth-service/src/main/java/com/leyou/auth/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/leyou-auth/leyou-auth-service/src/main/java/com/leyou/auth/service/AuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/leyou-auth/leyou-auth-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/leyou-auth/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/leyou-gateway/src/main/java/com/leyou/gateway/config/FilterProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/leyou-gateway/src/main/java/com/leyou/gateway/config/JwtProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/leyou-gateway/src/main/java/com/leyou/gateway/filter/LoginFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/leyou-user/leyou-user-interface/src/main/java/com/leyou/user/api/UserApi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leyou/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leyou/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leyou/leyou-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leyou/leyou-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leyou/leyou-gateway/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-gateway/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../leyou/leyou-user/leyou-user-interface/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-user/leyou-user-interface/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/leyou-user/leyou-user-interface/src/main/java/com/leyou/user/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-user/leyou-user-interface/src/main/java/com/leyou/user/pojo/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/leyou-user/leyou-user-interface/target/classes/com/leyou/user/pojo/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-user/leyou-user-interface/target/classes/com/leyou/user/pojo/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/leyou-user/leyou-user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-user/leyou-user-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/leyou-user/leyou-user-service/src/main/java/com/leyou/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-user/leyou-user-service/src/main/java/com/leyou/user/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../leyou/leyou-user/leyou-user-service/src/main/java/com/leyou/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-user/leyou-user-service/src/main/java/com/leyou/user/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/leyou-user/leyou-user-service/target/classes/com/leyou/user/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-user/leyou-user-service/target/classes/com/leyou/user/controller/UserController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../leyou/leyou-user/leyou-user-service/target/classes/com/leyou/user/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-user/leyou-user-service/target/classes/com/leyou/user/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leyou/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +83,7 @@
       <workItem from="1618849253781" duration="3453000" />
       <workItem from="1619454268669" duration="598000" />
       <workItem from="1619455917440" duration="387000" />
-      <workItem from="1619544682000" duration="24895000" />
+      <workItem from="1619544682000" duration="26720000" />
     </task>
     <servers />
   </component>

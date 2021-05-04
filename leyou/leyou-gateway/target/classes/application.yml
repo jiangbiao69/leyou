@@ -14,4 +14,19 @@ zuul:
     item-service: /item/**  #路由到商品的微服务
     search-service: /search/**  #路由到搜索微服务
     user-service: /user/**  #路由到user微服务
+    auth-service: /auth/**  #路由到auth微服务
+  add-host-header: true
+  sensitive-headers:  #覆盖敏感头信息
+leyou:
+  jwt:
+    pubKeyPath: E:\\IdeaProjects\\tmp\\rsa\\rsa.pub   # 公钥地址
+    cookieName: LY_TOKEN
+  filter:
+    allowPaths:   #以下是白名单路径
+      - /api/auth
+      - /api/search
+      - /api/user/register
+      - /api/user/check
+      - /api/user/code
+      - /api/item
 

@@ -20,6 +20,7 @@
         <module>leyou-sms</module>
         <module>leyou-auth</module>
         <module>leyou-cart</module>
+        <module>leyou-order</module>
     </modules>
 
     <!--<properties>   这是创建项目时自动帮我们生成的，先注释掉看是否影响项目运行，因为课程中没有这一段
